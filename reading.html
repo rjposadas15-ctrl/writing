@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reading</title>
+
+  <style>
+    :root { --ink:#111; --rule:#ddd; }
+    body { margin:0; padding:0; font-family: Georgia, "Times New Roman", serif; line-height:1.45; color:var(--ink); }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .row { max-width:900px; margin:0 auto; padding:2rem 1rem 3rem; }
+
+    header { display:flex; flex-direction:column; gap:.5rem; margin-bottom:1.25rem; }
+    .back { width: fit-content; font-size: .95rem; opacity: .85; }
+    h1 { font-size:1.6rem; margin:.25rem 0 0; }
+
+    .yearnav { font-variant-numeric: tabular-nums; opacity:.9; }
+    .year { margin:2rem 0 .5rem; font-size:1.2rem; letter-spacing:.02em; }
+
+    .item {
+      display:grid;
+      grid-template-columns:140px 1fr;
+      gap:1rem;
+      padding:1rem 0;
+      border-bottom:1px solid var(--rule);
+    }
+
+    .when {
+      position: sticky;
+      top: 1rem;
+      align-self:start;
+      font-variant-numeric: tabular-nums;
+      letter-spacing:.02em;
+      opacity:.85;
+    }
+
+    .title { font-size:1.05rem; }
+    .author { opacity: .75; }
+
+    @media (max-width:520px) {
+      .item { grid-template-columns: 1fr; gap:.35rem; }
+      .when { position: relative; top:0; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <header>
+      <a class="back" href="index.html">&#8592; Home</a>
+      <h1>Reading</h1>
+      <div class="yearnav">Jump: <a href="#y2026">2026</a> · <a href="#y2025">2025</a> · <a href="#y2024">2024</a></div>
+    </header>
+
+    <!-- Most recent to oldest as you scroll -->
+
+    <h2 class="year" id="y2026">2026</h2>
+
+    <div class="item">
+      <div class="when">Jan 4, 2026</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/2794" target="_blank" rel="noopener noreferrer"><em>The Crying of Lot 49</em></a>
+        </div>
+        <div class="author">Thomas Pynchon</div>
+      </div>
+    </div>
+
+    <h2 class="year" id="y2025">2025</h2>
+
+    <div class="item">
+      <div class="when">Nov 27, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/89338" target="_blank" rel="noopener noreferrer"><em>Hamlet</em></a>
+        </div>
+        <div class="author">William Shakespeare</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Nov 17, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/9114152" target="_blank" rel="noopener noreferrer"><em>The Man Who Was Thursday: A Nightmare (Penguin Classics)</em></a>
+        </div>
+        <div class="author">G.K. Chesterton</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Aug 19, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/218491361" target="_blank" rel="noopener noreferrer"><em>Moby-Dick (Signature Editions)</em></a>
+        </div>
+        <div class="author">Herman Melville</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Jul 25, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/6256228" target="_blank" rel="noopener noreferrer"><em>For Whom The Bell Tolls</em></a>
+        </div>
+        <div class="author">Ernest Hemingway</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Jun 25, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/2165" target="_blank" rel="noopener noreferrer"><em>The Old Man and the Sea</em></a>
+        </div>
+        <div class="author">Ernest Hemingway</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Jun 4, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/394695" target="_blank" rel="noopener noreferrer"><em>Leaves of Grass: The First (1855) Edition</em></a>
+        </div>
+        <div class="author">Walt Whitman</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">May 30, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/166997" target="_blank" rel="noopener noreferrer"><em>Stoner</em></a>
+        </div>
+        <div class="author">John Williams</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">May 3, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/2052" target="_blank" rel="noopener noreferrer"><em>The Big Sleep (Philip Marlowe, #1)</em></a>
+        </div>
+        <div class="author">Raymond Chandler</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Apr 13, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/2136" target="_blank" rel="noopener noreferrer"><em>Specimen Days</em></a>
+        </div>
+        <div class="author">Michael Cunningham</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Feb 25, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/18774981" target="_blank" rel="noopener noreferrer"><em>Waking Up: A Guide to Spirituality Without Religion</em></a>
+        </div>
+        <div class="author">Sam Harris</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Feb 12, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/6748" target="_blank" rel="noopener noreferrer"><em>A Supposedly Fun Thing I&#39;ll Never Do Again: Essays and Arguments</em></a>
+        </div>
+        <div class="author">David Foster Wallace</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Feb 6, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/24400" target="_blank" rel="noopener noreferrer"><em>The Trouble With Poetry - And Other Poems</em></a>
+        </div>
+        <div class="author">Billy Collins</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Feb 3, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/36454667" target="_blank" rel="noopener noreferrer"><em>Empire of Silence (The Sun Eater, #1)</em></a>
+        </div>
+        <div class="author">Christopher Ruocchio</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Jan 5, 2025</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/60215" target="_blank" rel="noopener noreferrer"><em>The Urth of the New Sun</em></a>
+        </div>
+        <div class="author">Gene Wolfe</div>
+      </div>
+    </div>
+
+    <h2 class="year" id="y2024">2024</h2>
+
+    <div class="item">
+      <div class="when">Dec 14, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/58916147" target="_blank" rel="noopener noreferrer"><em>Tomorrow, and Tomorrow, and Tomorrow</em></a>
+        </div>
+        <div class="author">Gabrielle Zevin</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Nov 10, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/55077643" target="_blank" rel="noopener noreferrer"><em>Sword &amp; Citadel</em></a>
+        </div>
+        <div class="author">Gene Wolfe</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Oct 16, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/441013" target="_blank" rel="noopener noreferrer"><em>Into the Wild</em></a>
+        </div>
+        <div class="author">Jon Krakauer</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Sep 24, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/5297" target="_blank" rel="noopener noreferrer"><em>The Picture of Dorian Gray</em></a>
+        </div>
+        <div class="author">Oscar Wilde</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Sep 16, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/62873378" target="_blank" rel="noopener noreferrer"><em>The Art Thief: A True Story of Love, Crime, and a Dangerous Obsession</em></a>
+        </div>
+        <div class="author">Michael Finkel</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Sep 1, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/10569" target="_blank" rel="noopener noreferrer"><em>On Writing: A Memoir of the Craft</em></a>
+        </div>
+        <div class="author">Stephen King</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Aug 26, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/55077689" target="_blank" rel="noopener noreferrer"><em>Shadow &amp; Claw</em></a>
+        </div>
+        <div class="author">Gene Wolfe</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Aug 16, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/33514" target="_blank" rel="noopener noreferrer"><em>The Elements of Style</em></a>
+        </div>
+        <div class="author">William Strunk Jr.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Jul 26, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/202934233" target="_blank" rel="noopener noreferrer"><em>The North Wind (The Four Winds, #1)</em></a>
+        </div>
+        <div class="author">Alexandria Warwick</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Jul 19, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/57945316" target="_blank" rel="noopener noreferrer"><em>Babel</em></a>
+        </div>
+        <div class="author">R.F. Kuang</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Apr 23, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/6751" target="_blank" rel="noopener noreferrer"><em>Consider the Lobster and Other Essays</em></a>
+        </div>
+        <div class="author">David Foster Wallace</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Apr 16, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/11297" target="_blank" rel="noopener noreferrer"><em>Norwegian Wood</em></a>
+        </div>
+        <div class="author">Haruki Murakami</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="when">Mar 26, 2024</div>
+      <div>
+        <div class="title">
+          <a href="https://www.goodreads.com/book/show/6320534" target="_blank" rel="noopener noreferrer"><em>Under the Dome</em></a>
+        </div>
+        <div class="author">Stephen King</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
